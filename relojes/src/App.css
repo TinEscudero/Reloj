@@ -1,0 +1,131 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header {
+  background-color: #0e141f;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.reloj {
+  color: rgb(0, 212, 212);
+  background-color: #1c2538;
+  width: 300px;
+  
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 212, 212, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.clock {
+  color: rgb(0, 212, 212);
+  background-color: #1c2538;
+  width: 300px;
+  
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 212, 212, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.countdown {
+  color: rgb(0, 212, 212);
+  background-color: #1c2538;
+  width: 300px;
+ 
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 212, 212, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.boton1,
+.boton2,
+.boton3,
+.boton4 {
+  font-size: 20px;
+  border: none;
+  
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.2s ease-out;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.boton1::before,
+.boton2::before,
+.boton3::before,
+.boton4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0e141f;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.2s ease-out;
+  z-index: -1;
+}
+
+.boton1:hover::before,
+.boton2:hover::before,
+.boton3:hover::before,
+.boton4:hover::before {
+  transform: scaleX(1);
+}
+
+.boton1:hover,
+.boton2:hover,
+.boton3:hover,
+.boton4:hover {
+  background-color: #50c878;
+  color: rgb(0, 212, 212);
+  box-shadow: 0 0 20px rgba(2, 133, 255, 0.5);
+}
+
+.fuera {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+ 
+  border: 10px solid rgba(80, 200, 120, 0.5);
+  
+}
+
